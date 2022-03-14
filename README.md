@@ -1,6 +1,6 @@
 # Magnetic-Field-Modeling
 
-Collections of MATLAB scripts and functions for the design of cylindrically magnetized objects.
+Collections of MATLAB scripts and functions for the design of systems comprising cylindrically magnetized objects.
 
 Capability of the functions present in the repository: 
 1) Computation of **Magnetic Field** and **Magnetic Field Gradient** for *cylindrical* and *ring* permanent magnets with *arbitrary* and *uniform* magnetization (e.g., Axially and Diametrically magnetized cylinders as special cases), or equivalently of axial solenoids. These functions can be used for the computation of the Torques and Forces (Field and Field Gradient, respectively) applied by a permanent magnet cylinder to a magnetic dipole.
