@@ -8,3 +8,5 @@ Capability of the functions present in the repository:
 3) Visualization functions for the magnetic field and field gradient.
 
 Additional information on the models will be provided soon ...
+
+[![View Magnetic Field Modeling on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/73906-magnetic-field-modeling)
