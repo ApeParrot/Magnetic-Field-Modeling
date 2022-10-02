@@ -10,13 +10,13 @@ Capability of the functions present in the repository:
 ## Magnetic Field and Gradient of cylindrical magnets
 
 The present code computes of the magnetic field $\mathbf{H}$, as well as its gradient $\nabla\mathbf{H}$, at a generic point $\mathbf{P}$ either outside or within the magnet. These quantities are computed **analytically** solving the governing equations for magnetostatics (in the absence of free currents), namely
-$$\nabla \times \mathbf{H} = 0\hspace{1.2mm}, \qquad \nabla \cdot  \mathbf{B} = 0\hspace{1.2mm},$$
+$$\nabla \times \mathbf{H} = 0\;, \quad \nabla \cdot  \mathbf{B} = 0\;,$$
 with $\mathbf{B}$ representing magnetic induction, which is related to $\mathbf{H}$ and to the (local medium) magnetization $\mathbf{M}$ by $\mathbf{B} = \mu_0(\mathbf{H} + \mathbf{M} )$, where $\mu_0 = 4\pi \cdot 10^{-7} \mbox{T m A}^{-1}$ denotes vacuum magnetic permeability. Once introduced the 
 magnetostatic scalar potential $\varphi$, such that, $\mathbf{H} = -\nabla \varphi$, whence $\Delta\varphi = -\nabla\cdot\mathbf{H}$,
 the remaining governing equation reads:
-$$\nabla^2\varphi = \nabla \cdot \mathbf{M}\hspace{1.2mm}.$$
+$$\nabla^2\varphi = \nabla \cdot \mathbf{M}\;.$$
 Its solution, based on the assumed uniform magnetization $\mathbf{M}\_{\star}$, formally reads:
-$$\varphi(\mathbf{P}) = \frac{1}{4\pi}\int\_{\mathrm{S}}  \frac{\mathbf{M}\_{\star} \cdot \hat{\mathbf{n}}}{||\mathbf{P}-\mathbf{P}'||} \hspace{1.2mm} \mathrm{d} \mathrm{S}^\prime,$$
+$$\varphi(\mathbf{P}) = \frac{1}{4\pi}\int\_{\mathrm{S}}  \frac{\mathbf{M}\_{\star} \cdot \hat{\mathbf{n}}}{||\mathbf{P}-\mathbf{P}'||} \; \mathrm{d} \mathrm{S}^\prime,$$
 where $\mathrm{S}=\mathrm{S\_t}\cup\mathrm{S\_b}\cup\mathrm{S\_l}$ denotes the surface of the cylindrical magnet (union of top, bottom and lateral surfaces, respectively) and $\hat{\mathbf{n}}$ denotes the (outer) normal at the running point $\mathbf{P}'$ on the cylinder surface.
 
 Additional information on the models will be provided soon ...
