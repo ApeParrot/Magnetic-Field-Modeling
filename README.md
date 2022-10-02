@@ -15,6 +15,9 @@ with $\mathbf{B}$ representing magnetic induction, which is related to $\mathbf{
 magnetostatic scalar potential $\varphi$, such that, $\mathbf{H} = -\nabla \varphi$, whence $\Delta\varphi = -\nabla\cdot\mathbf{H}$,
 the remaining governing equation reads:
 $$\nabla^2\varphi = \nabla \cdot \mathbf{M}.$$
+Its solution, based on the assumed uniform magnetization $\mathbf{M}_\star$, formally reads:
+$$\varphi(\mathbf{P}) = \frac{1}{4\pi}\int_{\mathrm{S_t}\cup\mathrm{S_b}\cup\mathrm{S_l}}  \frac{\gr{M}_\star \cdot \hat{\mathbf{n}}}{||\mathbf{P}-\mathbf{P}'||} \, \mathrm{d} \mathrm{S}^\prime,$$
+where $\hat{\mathbf{n}}$ denotes the (outer) normal at the running point $\mathbf{P}'$ on the cylinder surface.
 
 Additional information on the models will be provided soon ...
 
