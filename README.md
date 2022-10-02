@@ -22,7 +22,7 @@ $$\varphi(\mathbf{P}) = \frac{1}{4\pi}\int\_{\mathrm{S}}  \frac{\mathbf{M}\_{\st
 where $\mathrm{S}=\mathrm{S\_t}\cup\mathrm{S\_b}\cup\mathrm{S\_l}$ denotes the surface of the cylindrical magnet (union of top, bottom and lateral surfaces, respectively) and $\hat{\mathbf{n}}$ denotes the (outer) normal at the running point $\mathbf{P}'$ on the cylinder surface.
 
 Last equation and derivatives (up to second order) were solved to obtain all the components of $\mathbf{H}$ and $\nabla\mathbf{H}$ in cylindrical coordinates, recasting them in terms of the Bulirsch integral $\mbox{cel}$ and the Normalized Heuman Lambda function $\Lambda$,
-$$\mbox{cel}(k\_c,p,a,b) = \int\_0^{\pi/2} \frac{a \cos(\psi)^2 + b \sin(\psi)^2}{(\cos(\psi)^2+p \sin(\psi)^2) \, \sqrt{\cos(\psi)^2+k\_c^2 \sin(\psi)^2}}\mbox{ } \mathrm{d}\psi$$
+$$\mbox{cel}(k\_c,p,a,b) = \int\_0^{\pi/2} \frac{a \cos^2(\psi) + b \sin^2(\psi)}{(\cos^2(\psi) + p \sin^2(\psi)) \mbox{ } \sqrt{\cos^2(\psi)+k\_c^2 \sin^2(\psi)}}\mbox{ } \mathrm{d}\psi$$
 $$\Lambda(\sigma^2,k) = \sqrt{\tilde{p}\sigma^2} \mbox{ } \mbox{cel}(k\_c,\tilde{p},1,k\_c^2)\mbox{ }, \quad \tilde{p} = \frac{1 - \sigma^2 k\_c^2}{1 - \sigma^2}$$
 
 Additional information on the models will be provided soon ...
