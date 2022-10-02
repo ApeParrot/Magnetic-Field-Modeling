@@ -9,18 +9,13 @@ Capability of the functions present in the repository:
 
 ## Magnetic Field and Gradient of cylindrical magnets
 
-The present code computes of the magnetic field $\gr{H}$, as well as its gradient $\nabla\mathbf{H}$, at a generic point $\mathbf{P}$ either outside or within the magnet. These quantities are computed **analytically** solving the governing equations for magnetostatics (in the absence of free currents), namely
-\begin{align*}
-$\nabla\times\mathbf{H}=0$\\
+The present code computes of the magnetic field $\mathbf{H}$, as well as its gradient $\nabla\mathbf{H}$, at a generic point $\mathbf{P}$ either outside or within the magnet. These quantities are computed **analytically** solving the governing equations for magnetostatics (in the absence of free currents), namely
+$\nabla\times\mathbf{H}=0$
 $\nabla\dot\mathbf{B}=0$,
-\end{align*}
 with $\gr{B}$ representing magnetic induction, which is related to $\mathbf{H}$ and to the (local medium) magnetization $\mathbf{M}$ by $\mathbf{B} = \mu_0(\mathbf{H} + \mathbf{M} )$, where $\mu_0 = 4\pi \cdot 10^{-7} \mbox{T m A}^{-1}$ denotes vacuum magnetic permeability. Once introduced the 
 magnetostatic scalar potential $\varphi$,
 such that:
-\begin{equation*}
 \mathbf{H} = -\nabla \varphi,
-\label{eq:scalarPotential}
-\end{equation*}
 whence $\Delta\varphi = -\nabla\cdot\mathbf{H}$,
 the single governing equation
 $\Delta\varphi = \nabla \cdot \mathbf{M}$ remains.
