@@ -19,6 +19,8 @@ Its solution, based on the assumed uniform magnetization $\mathbf{M}\_{\star}$, 
 $$\varphi(\mathbf{P}) = \frac{1}{4\pi}\int\_{\mathrm{S}}  \frac{\mathbf{M}\_{\star} \cdot \hat{\mathbf{n}}}{||\mathbf{P}-\mathbf{P}'||}\mbox{ } \mathrm{d} \mathrm{S}^\prime,$$
 where $\mathrm{S}=\mathrm{S\_t}\cup\mathrm{S\_b}\cup\mathrm{S\_l}$ denotes the surface of the cylindrical magnet (union of top, bottom and lateral surfaces, respectively) and $\hat{\mathbf{n}}$ denotes the (outer) normal at the running point $\mathbf{P}'$ on the cylinder surface.
 
+Last equation was solved to obtain all the components of $\mathbf{H}$ and $\nabla\mathbf{H}$ in cylindrical coordinates, recasting them in terms of the Bulirsch integral $\mbox{cel}$ and the Normalized Heuman Lambda function $\Lambda$.
+
 Additional information on the models will be provided soon ...
 
 [![View Magnetic Field Modeling on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/73906-magnetic-field-modeling)
