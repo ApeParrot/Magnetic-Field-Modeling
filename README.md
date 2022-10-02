@@ -16,7 +16,7 @@ magnetostatic scalar potential $\varphi$, such that, $\mathbf{H} = -\nabla \varp
 the remaining governing equation reads:
 $$\nabla^2\varphi = \nabla \cdot \mathbf{M}.$$
 Its solution, based on the assumed uniform magnetization $\mathbf{M}\_{\star}$, formally reads:
-$$\varphi(\mathbf{P}) = \frac{1}{4\pi}\int\_{\mathrm{S}}  \frac{\mathrm{M}\_{\star} \cdot \hat{\mathbf{n}}}{||\mathbf{P}-\mathbf{P}'||} \, \mathrm{d} \mathrm{S}^\prime,$$
+$$\varphi(\mathbf{P}) = \frac{1}{4\pi}\int\_{\mathrm{S}}  \frac{\mathbf{M}\_{\star} \cdot \hat{\mathbf{n}}}{||\mathbf{P}-\mathbf{P}'||} \, \mathrm{d} \mathrm{S}^\prime,$$
 where $\mathrm{S}=\mathrm{S\_t}\cup\mathrm{S\_b}\cup\mathrm{S\_l}$ denotes the surface of the cylindrical magnet (union of top, bottom and lateral surfaces, respectively) and $\hat{\mathbf{n}}$ denotes the (outer) normal at the running point $\mathbf{P}'$ on the cylinder surface.
 
 Additional information on the models will be provided soon ...
