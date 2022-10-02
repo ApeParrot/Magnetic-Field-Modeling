@@ -9,6 +9,8 @@ Capability of the functions present in the repository:
 
 ## Magnetic Field and Gradient of cylindrical magnets
 
+The expressions implemented provide excellent approximations to the real fields when modern, high-grade magnetic materials, like SmCo, NdFeB or ferrites with susceptibilities $\chi < 0.1$ are involved. The main advantage over common numerical methods such as finite element (FE) approaches or direct numerical integration is the fast computation times of the order of microseconds, which enables highly efficient multivariate parameter space analysis and solving global optimization problems for permanent magnet arrangements.
+
 The present code computes of the magnetic field $\mathbf{H}$, as well as its gradient $\nabla\mathbf{H}$, at a generic point $\mathbf{P}$ either outside or within the magnet. These quantities are computed **analytically** solving the governing equations for magnetostatics (in the absence of free currents), namely
 $$\nabla \times \mathbf{H} = 0\mbox{ }, \quad \nabla \cdot  \mathbf{B} = 0\mbox{ },$$
 with $\mathbf{B}$ representing magnetic induction, which is related to $\mathbf{H}$ and to the (local medium) magnetization $\mathbf{M}$ by $\mathbf{B} = \mu_0(\mathbf{H} + \mathbf{M} )$, where $\mu_0 = 4\pi \cdot 10^{-7} \mbox{ T m A}^{-1}$ denotes vacuum magnetic permeability. Once introduced the 
@@ -19,7 +21,7 @@ Its solution, based on the assumed uniform magnetization $\mathbf{M}\_{\star}$, 
 $$\varphi(\mathbf{P}) = \frac{1}{4\pi}\int\_{\mathrm{S}}  \frac{\mathbf{M}\_{\star} \cdot \hat{\mathbf{n}}}{||\mathbf{P}-\mathbf{P}'||}\mbox{ } \mathrm{d} \mathrm{S}^\prime,$$
 where $\mathrm{S}=\mathrm{S\_t}\cup\mathrm{S\_b}\cup\mathrm{S\_l}$ denotes the surface of the cylindrical magnet (union of top, bottom and lateral surfaces, respectively) and $\hat{\mathbf{n}}$ denotes the (outer) normal at the running point $\mathbf{P}'$ on the cylinder surface.
 
-Last equation was solved to obtain all the components of $\mathbf{H}$ and $\nabla\mathbf{H}$ in cylindrical coordinates, recasting them in terms of the Bulirsch integral $\mbox{cel}$ and the Normalized Heuman Lambda function $\Lambda$.
+Last equation and derivatives (up to second order) were solved to obtain all the components of $\mathbf{H}$ and $\nabla\mathbf{H}$ in cylindrical coordinates, recasting them in terms of the Bulirsch integral $\mbox{cel}$ and the Normalized Heuman Lambda function $\Lambda$.
 
 Additional information on the models will be provided soon ...
 
