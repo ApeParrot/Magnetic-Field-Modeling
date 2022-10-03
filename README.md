@@ -7,7 +7,7 @@ Capability of the functions present in the repository:
 2) Computation of **Forces** and **Torques** between *coaxial* permanent magnets cylinders with **axial** or **diametric** magnetization.
 3) Visualization functions for the magnetic field and field gradient.
 
-**Notes**: The expressions implemented in this library are based on the fundamental assumption of uniform magnetization, that is an excellent approximations for magnets made up of modern, high-grade magnetic materials, like SmCo, NdFeB or ferrites with susceptibilities $\chi < 0.1$. The main advantage over common numerical methods such as finite element (FE) approaches or direct numerical integration is the fast computation times of the order of microseconds, which enables highly efficient multivariate parameter space analysis and solving global optimization problems for permanent magnet arrangements.
+**Notes**: The expressions implemented in this library are based on the fundamental assumption of uniform magnetization, that is an excellent approximations for magnets made up of modern, high-grade magnetic materials, like SmCo, NdFeB or ferrites with susceptibilities $\chi < 0.1$ . The main advantage over common numerical methods such as finite element (FE) approaches or direct numerical integration is the fast computation times of the order of microseconds, which enables highly efficient multivariate parameter space analysis and solving global optimization problems for permanent magnet arrangements.
 
 ## Magnetic Field and Gradient of cylindrical magnets
 
