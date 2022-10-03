@@ -9,6 +9,13 @@ Capability of the functions present in the repository:
 
 **Notes**: The expressions implemented in this library are based on the fundamental assumption of uniform magnetization, that is an excellent approximations for magnets made up of modern, high-grade magnetic materials, like SmCo, NdFeB or ferrites with susceptibilities $\chi < 0.1$ . The main advantage over common numerical methods such as finite element (FE) approaches or direct numerical integration is the fast computation times of the order of microseconds, which enables highly efficient multivariate parameter space analysis and solving global optimization problems for permanent magnet arrangements.
 
+Repo description at a glance:
+- directory "00 - Older Versions": contains functions of the first repo version. They can compute the field of axial magnets and rings
+- directory "01 - Permanent Magnet Cylinders and Rings": contains functions for force and torque between coaxial cylinders (having same magnetization direction)
+- directory "04 - Graphics": contains functions to visualize field components of cylindrical magnets with arbitrary magnetization
+- directory "05 - Numerical Recipes": is a convenient folder containing useful functions from Elfun18 library for numerical computation of special functions
+- directory "11 - Parallel Library": contains functions to compute field and gradient using vector operations only (for speed up).
+
 ## Magnetic Field and Gradient of cylindrical magnets
 
 The present code computes of the magnetic field $\mathbf{H}$, as well as its gradient $\nabla\mathbf{H}$, at a generic point $\mathbf{P}$ either **outside or within the magnet**. These quantities are computed **analytically** solving the governing equations for magnetostatics in the absence of free currents, namely
