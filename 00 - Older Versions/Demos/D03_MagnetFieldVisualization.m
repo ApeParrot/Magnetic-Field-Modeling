@@ -1,12 +1,13 @@
-%% Cylinder magnetic field visualization
- % This script is a DEMO for the visualization of the magnetic flux density 
- % field lines of an axially magnetized cylinder. 
-
 clc
 clear all %#ok<CLALL>
 close all
-%%
+%% DEMO 3 - Cylinder magnetic field visualization
+% This script is a DEMO for the visualization of the magnetic flux density 
+% field lines of an axially magnetized cylinder. 
 
+currentPath = pwd;                          % store current path
+cd ..                                       % move to parent directory
+addpath(genpath("Functions and Scripts"))   % add folder to path
 MagPos = [0 0 0 0 0 1];
 
 M = 1.2706/(4*pi*1e-7);              % Magnetization   [A/m]    
