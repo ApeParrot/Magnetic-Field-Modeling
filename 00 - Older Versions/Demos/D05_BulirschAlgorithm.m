@@ -1,4 +1,7 @@
-%% DEMO PARALLEL BULIRSCH
+clc
+clear all %#ok<CLALL>
+close all
+%% DEMO 5 - BULIRSCH CEL computation
  % This script provides a comparison of the parallel implementation of the 
  % Bulirsch Algorithm w.r.t. to the original algorithm.
  % The comparison is performed though the computation of two example of
@@ -7,11 +10,10 @@
  % - C(kc,g^2),1,g)
  % which are also used in the efficient computation of the magnetic flux
  % density of axially magnetized cylinders and rings.
- 
-clc
-clear all %#ok<CLALL>
-close all
-%%
+
+currentPath = pwd;                          % store current path
+cd ..                                       % move to parent directory
+addpath(genpath("Functions and Scripts"))   % add folder to path
 
 kc    = linspace(0.01,0.99,100*6*2);
 rho   = linspace(0.01,0.08,100*6*2);
