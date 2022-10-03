@@ -7,6 +7,10 @@ clc
 close all
 clear all %#ok<CLALL>
 
+currentPath = pwd;                          % store current path
+cd ..                                       % move to parent directory
+addpath(genpath("Functions and Scripts"))   % add folder to path
+
 % Poses of the magnets: the first three coordinates (per line) are the
 % positions, while the last three coordinates are the dipole magnetic
 % moment unit vectors, e.g. the orientation of each magnet (in this case 
