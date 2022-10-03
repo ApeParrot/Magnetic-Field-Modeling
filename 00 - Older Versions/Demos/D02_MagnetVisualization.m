@@ -1,12 +1,29 @@
 clc
 clear all %#ok<CLALL>
 close all
-%%
+%% DEMO 2 - test functions to visualize a ring magnet
+% this demo shows how to run the visualization function 
+% drawRingMagnet
+% To use this function, the user simply needs to know the following
+% parameters: 
+%   - position (magnet origin or center)
+%   - orientation (i.e., the axis of the cylinder as a unit vector)
+%   - radius (in meters)
+%   - length (in meters)
 
-position = [0 0 0];
-         
+currentPath = pwd;                          % store current path
+cd ..                                       % move to parent directory
+addpath(genpath("Functions and Scripts"))   % add folder to path
+
+position = [0 0 0];                         % magnet origin m.u. [m]
+
+% generate random orientation
 orientation = 2*rand(1,3) - [1 1 1];
 orientation = orientation/norm(orientation);
+
+% note: since this is the code for an axial cylindrical magnet, the body is
+% symmetric w.r.t. its axis (i.e., the cylinder axis). Thus its orientation
+% can be simply described by the normalized magnetization vector.
 
 figure
 x0     = 10;
