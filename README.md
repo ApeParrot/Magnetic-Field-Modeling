@@ -35,14 +35,10 @@ Force and torque exerted by C1 on C2 can be respectively computed as follows:
 $$\mathbf{F}\_{1\to 2}=\mu_0\int\_{V\_2} \nabla\mathbf{H}\_1 \cdot \mathbf{M}\_2\mbox{ } \mathrm{d}V\mbox{ },$$
 $$\mathbf{T}\_{1\to 2}=\mu_0\int\_{V\_2} \Big( (\mathbf{P} - \mathbf{O}\_1) \times (\nabla\mathbf{H}\_1 \cdot \mathbf{M}\_2)+ \mathbf{M}\_2\times\mathbf{H}\_1 \Big)\mbox{ }\mathrm{d}V\mbox{ } ,$$ 
 where (subscripts are understood and) $V_2$ denotes the volume occupied by C2.
-By assuming axial magnetizations
-$\mathbf{M}\_1 = \mathbf{M}\_{\parallel1}$ and 
-$\mathbf{M}\_2 = \mathbf{M}\_{\parallel2}$, we
-first computed the corresponding force $\mathbf{F}^\parallel\_{1\to2}$
-(torque being null, by symmetry).
-Then, by assuming diametric magnetizations
-$\mathbf{M}\_1 = \mathbf{M}\_{\bot1}$ and 
-$\mathbf{M}\_2 = \mathbf{M}\_{\bot2}$ at a generic relative angular shift, we computed the related force
+The code implements the solutions of the two above-mentioned equations in case of axial magnetizations:
+$\mathbf{M}\_1 = \mathbf{M}\_{\parallel1}$ and $\mathbf{M}\_2 = \mathbf{M}\_{\parallel2}$,
+thus computing only the corresponding force $\mathbf{F}^\parallel\_{1\to2}$ (torque being null, by symmetry), and in the case of diametric magnetizations:
+$\mathbf{M}\_1 = \mathbf{M}\_{\bot1}$, $\mathbf{M}\_2 = \mathbf{M}\_{\bot2}$, having a generic relative angular shift, thus computing the related force
 $\mathbf{F}^\bot\_{1\to2}$ and torque $\mathbf{T}^\bot\_{1\to2}$.
 
 Additional information on the models will be provided soon ...
