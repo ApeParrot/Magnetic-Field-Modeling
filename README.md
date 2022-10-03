@@ -23,7 +23,10 @@ where $\mathrm{S}=\mathrm{S\_t}\cup\mathrm{S\_b}\cup\mathrm{S\_l}$ denotes the s
 
 Last equation and its derivatives (up to second order) were solved to obtain all the components of $\mathbf{H}$ and $\nabla\mathbf{H}$ in cylindrical coordinates, recasting them in terms of the Bulirsch integral $\mbox{cel}$ and the Normalized Heuman Lambda function $\Lambda$,
 $$\mbox{cel}(k\_c,p,a,b) = \int\_0^{\pi/2} \frac{a \cos^2(\psi) + b \sin^2(\psi)}{\left(\cos^2(\psi) + p \sin^2(\psi)\right) \mbox{ } \sqrt{\cos^2(\psi)+k\_c^2 \sin^2(\psi)}}\mbox{ } \mathrm{d}\psi$$
-$$\Lambda(\sigma^2,k) = \sqrt{\tilde{p}\sigma^2} \mbox{ } \mbox{cel}(k\_c,\tilde{p},1,k\_c^2)\mbox{ }, \quad \tilde{p} = \frac{1 - \sigma^2 k\_c^2}{1 - \sigma^2}$$
+$$\Lambda(\sigma^2,k) = \sqrt{\tilde{p}\sigma^2} \mbox{ } \mbox{cel}(k\_c,\tilde{p},1,k\_c^2)\mbox{ }, \quad \tilde{p} = \frac{1 - \sigma^2 k\_c^2}{1 - \sigma^2}\mbox{ }.$$
+The use of these two functions allow to achieve a fast computation without encurring into representation singularities.
+These expressions could be used also in the computation of the magnetic force $\mathbf{F}$ and torque $\mathbf{T}$ exerted by a cylindrical magnet on a dipole, with magnetic moment $\mathbf{m}$, according to the expressions:
+$$\mathbf{F}=\mu\_0\nabla\mathbf{H}\cdot\mathbf{m}\mbox{ }, \quad \mathbf{T}=\mu\_0\mathbf{m}\times \mathbf{H}$$.
 
 Additional information on the models will be provided soon ...
 
