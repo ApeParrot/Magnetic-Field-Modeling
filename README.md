@@ -26,7 +26,24 @@ $$\mbox{cel}(k\_c,p,a,b) = \int\_0^{\pi/2} \frac{a \cos^2(\psi) + b \sin^2(\psi)
 $$\Lambda(\sigma^2,k) = \sqrt{\tilde{p}\sigma^2} \mbox{ } \mbox{cel}(k\_c,\tilde{p},1,k\_c^2)\mbox{ }, \quad \tilde{p} = \frac{1 - \sigma^2 k\_c^2}{1 - \sigma^2}\mbox{ }.$$
 The use of these two functions allow to achieve a fast computation without encurring into representation singularities.
 These expressions could be used also in the computation of the magnetic force $\mathbf{F}$ and torque $\mathbf{T}$ exerted by a cylindrical magnet on a dipole, with magnetic moment $\mathbf{m}$, according to the expressions:
-$$\mathbf{F}=\mu\_0\nabla\mathbf{H}\cdot\mathbf{m}\mbox{ }, \quad \mathbf{T}=\mu\_0\mathbf{m}\times \mathbf{H}$$.
+$$\mathbf{F}=\mu\_0\left(\nabla\mathbf{H}\cdot\mathbf{m}\right)\mbox{ }, \quad \mathbf{T}=\mu\_0\left(\mathbf{m}\times \mathbf{H}\right)$$.
+
+## Magnetic Force and Torque between coaxial cylindrical magnets
+
+The code provides also analytical models for force and torque between two coaxial cylinders, namely C1 (radius $\mathrm{R}\_1$, height $2\mathrm{L}\_1$, magnetization $\mathbf{M}\_1$) and C2 (radius $\mathrm{R}\_2$, height $2\mathrm{L}\_2$, magnetization $\mathbf{M}\_2$), at a relative distance (between magnets centers) $\mathrm{d} \ge \mathrm{L}\_1 + \mathrm{L}\_2$.
+Force and torque exerted by C1 on C2 can be respectively computed as follows: 
+$$ \mathbf{F}\_{1\to2}=\mu_0\int\_{V\_2}\nabla \mathbf{H}\_1 \cdot \mathbf{M}\_2\mbox{ } \mathrm{d}V\mbox{ }, $$
+$$ \mathbf{T}\_{1\to2}=\mu_0\int\_{V\_2} \Big((\mathbf{P} - \mathbf{O}\_1) \times (\nabla\gr{H}\_1 \cdot \mathbf{M}\_2)+ \mathbf{M}\_2\times\mathbf{H}\_1 \Big)\,\mathrm{d}V \, , 
+where (subscripts are understood and) $V_2$ denotes the volume occupied by C2.
+By assuming axial magnetizations
+$\mathbf{M}\_1 = \mathbf{M}\_{\parallel1}$ and 
+$\mathbf{M}\_2 = \mathbf{M}\_{\parallel2}$, we
+first computed the corresponding force $\mathbf{F}^\parallel\_{1\to2}$
+(torque being null, by symmetry).
+Then, by assuming diametric magnetizations
+$\mathbf{M}\_1 = \mathbf{M}\_{\bot1}$ and 
+$\mathbf{M}\_2 = \mathbf{M}\_{\bot2}$ at a generic relative angular shift, we computed the related force
+$\mathbf{F}^\bot\_{1\to2}$ and torque $\mathbf{T}^\bot\_{1\to2}$.
 
 Additional information on the models will be provided soon ...
 
