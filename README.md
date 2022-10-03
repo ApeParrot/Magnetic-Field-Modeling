@@ -33,7 +33,7 @@ $$\mathbf{F}=\mu\_0\left(\nabla\mathbf{H}\cdot\mathbf{m}\right)\mbox{ }, \quad \
 The code provides also analytical models for force and torque between two coaxial cylinders, namely C1 (radius $\mathrm{R}\_1$, height $2\mathrm{L}\_1$, magnetization $\mathbf{M}\_1$) and C2 (radius $\mathrm{R}\_2$, height $2\mathrm{L}\_2$, magnetization $\mathbf{M}\_2$), at a relative distance (between magnets centers) $\mathrm{d} \ge \mathrm{L}\_1 + \mathrm{L}\_2$.
 Force and torque exerted by C1 on C2 can be respectively computed as follows: 
 $$\mathbf{F}\_{1\to 2}=\mu_0\int\_{V\_2} \nabla\mathbf{H}\_1 \cdot \mathbf{M}\_2\mbox{ } \mathrm{d}V\mbox{ },$$
-$$\mathbf{T}\_{1\to 2}=\mu_0\int\_{V\_2} \Big( (\mathbf{P} - \mathbf{O}\_1) \times (\nabla\mathbf{H}\_1 \cdot \mathbf{M}\_2)+ \mathbf{M}\_2\times\mathbf{H}\_1 \Big)\,\mathrm{d}V \, ,$$ 
+$$\mathbf{T}\_{1\to 2}=\mu_0\int\_{V\_2} \Big( (\mathbf{P} - \mathbf{O}\_1) \times (\nabla\mathbf{H}\_1 \cdot \mathbf{M}\_2)+ \mathbf{M}\_2\times\mathbf{H}\_1 \Big)\mbox{ }\mathrm{d}V\mbox{ } ,$$ 
 where (subscripts are understood and) $V_2$ denotes the volume occupied by C2.
 By assuming axial magnetizations
 $\mathbf{M}\_1 = \mathbf{M}\_{\parallel1}$ and 
