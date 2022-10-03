@@ -1,11 +1,13 @@
-%% Ring magnetic field visualization
- % This script is a DEMO for the visualization of the magnetic flux density 
- % field lines of an axially magnetized ring. 
-
 clc
 clear all %#ok<CLALL>
 close all
-%%
+%% DEMO 4 - Ring magnetic field visualization
+% This script is a DEMO for the visualization of the magnetic flux density 
+% field lines of an axially magnetized ring. 
+
+currentPath = pwd;                          % store current path
+cd ..                                       % move to parent directory
+addpath(genpath("Functions and Scripts"))   % add folder to path
 
 MagPos = [0 0 0 0 0 1];
 
